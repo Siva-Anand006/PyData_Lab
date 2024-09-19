@@ -34,11 +34,15 @@ class Book:
             self.available = False
             print(f"You've borrowed '{self.title}' by {self.author}.")
         else:
-            print(f"You've borrowed '{self.title}' by {self.author}.")
+            print(f"The book '{self.title}' by {self.author} is currently unavailable.")
             
     def book_return(self):
         self.available = True
         print(f"You've returned '{self.title}' by {self.author}.")
+        
+        # Adding the __repr__ method
+    def __repr__(self):
+        return f"Book('{self.title}', '{self.author}', Available: {self.available})"
         
 #Class for library
 
@@ -87,3 +91,4 @@ library.add_book(book3)
 
 # Display books
 library.display_books()
+print(library.books)
