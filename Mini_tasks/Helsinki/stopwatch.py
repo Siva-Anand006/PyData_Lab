@@ -18,8 +18,7 @@ class Stopwatch:
 
 # Example usage
 watch = Stopwatch()
-print(watch)
-watch.tick()
-print(watch)
-watch.tick()
-print(watch)
+
+for i in range(3600):
+    print(watch)
+    watch.tick()
