@@ -18,11 +18,14 @@ class ExamSubmission:
     def __init__(self, examinee: str, points: int ):
         self.examinee = examinee
         self.points = points
-        pass
     
-    def passed(submissions: list, lowest_passing: int) -> list :
-        pass
-    pass
+def passed(submissions: list, lowest_passing: int) -> list :
+    passed_list = []
+    for submission in submissions:
+        if submission.points >= lowest_passing:
+            passed_list.append(submission)
+    
+    return passed_list
     
 if __name__ == "__main__":
     s1 = ExamSubmission("Peter", 12)
@@ -33,4 +36,4 @@ if __name__ == "__main__":
 
     passes = passed([s1, s2, s3, s4, s5], 15)
     for passing in passes:
-        print(passing)
+        print(passing.examinee)
