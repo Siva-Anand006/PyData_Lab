@@ -1,0 +1,1 @@
+This folder contains code and exercises completed as part of the Python Programming MOOC 2024 offered by the University of Helsinki.
