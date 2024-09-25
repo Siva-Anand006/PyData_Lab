@@ -37,3 +37,5 @@ if __name__ == "__main__":
     passes = passed([s1, s2, s3, s4, s5], 15)
     for passing in passes:
         print(passing.examinee)
+        
+#finished
