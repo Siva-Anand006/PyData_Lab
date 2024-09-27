@@ -1,0 +1,24 @@
+What is a client?
+A program which uses a class or an instance of a class.
+
+A class offers the client services throgh which it can access objects created based on the class.
+
+Encapsulation
+
+classes can hide their attributes from any prospective clients
+hidden attributes are called private.
+
+Hiding attributes from clients is called Encapsulation
+
+in python just add __ infront of the attribute name
+
+class CreditCard:
+    # the attribute number is private, while the attribute name is accessible
+    def __init__(self, number: str, name: str):
+        self.__number = number
+        self.name = name
+
+Getters and Setter
+
+Methods which are dedicated to accessing and changing attributes are called Getters and setters.
+
