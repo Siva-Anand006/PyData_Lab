@@ -43,3 +43,28 @@ if __name__ == "__main__":
     print(bonus)    # Output: 0.7225
     print(bonus2)   # Output: 0.758625
 
+
+
+'''
+Implementing Inheritance with Product and BonusCard Classes
+Objective:
+
+Create a system that models a bonus card system where customers earn bonuses based on their purchases. You will practice using inheritance by creating a BonusCard class and a PlatinumCard class, which has an additional bonus calculation.
+
+Requirements:
+
+Implement a class named Product that has the following attributes:
+
+name: the name of the product (string)
+price: the price of the product (float)
+Implement a class named BonusCard that:
+
+Has an attribute products_bought, which is an empty list to store Product objects.
+Includes a method add_product(product: Product) that adds the product to products_bought.
+Contains a method calculate_bonus() that calculates the bonus as 5% of the total price of all products in products_bought.
+Implement a subclass named PlatinumCard that inherits from BonusCard:
+
+In its __init__ method, ensure that it correctly calls the parent class's __init__ method.
+Override the calculate_bonus() method to first calculate the bonus using super().calculate_bonus() and then increase the bonus by an additional 5%.
+
+'''
