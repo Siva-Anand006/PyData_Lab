@@ -28,3 +28,5 @@ shelf.add_book(Book("A Good Cup of Java"))
 
 for book in shelf:
     print(book.name)  # Outputs book names
+
+# his is a program covering iterable class.
