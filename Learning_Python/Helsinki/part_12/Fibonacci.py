@@ -7,18 +7,19 @@ def fibonacci_list(limit):
     return fib_sequence
 
 # Generating the first 10 Fibonacci numbers
-fib_numbers1 = fibonacci_list(150)
+fib_numbers1 = fibonacci_list(10)
 
 print(fib_numbers1)
 
 def fibonacci_generator():
-    a, b = 0, 1
+    a,b = 0,1
     while True:
         yield a
-        a, b = b, a + b
+        a, b = b, a+b
+         
 
 # Using the generator to get the first 10 Fibonacci numbers
 fib_gen = fibonacci_generator()
-fib_numbers = [next(fib_gen) for _ in range(150)]
+fib_numbers = [next(fib_gen) for _ in range(10)]
 print(fib_numbers)
 
