@@ -39,6 +39,9 @@ class Car:
 
     
     def drive(self, km: int):
+        if km < 0:
+            raise ValueError("Distance to drive must be non-negative")
+
         if self.__petrol >= km:
            self.__petrol -= km
            self.__odometer += km
@@ -48,7 +51,7 @@ class Car:
            print("Insufficient fuel to continue journey.")
     
     def __str__(self) -> str:
-        return (f"Odometer: {self.__odometer} km, Petrol: y litres : {self.__petrol}")
+        return (f"Odometer: {self.__odometer} km, Petrol: {self.__petrol} litres")
     
 
 if __name__ == "__main__":
